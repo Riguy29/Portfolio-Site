@@ -109,9 +109,8 @@
         </div>
       </div>
     </section>
-
+    <!--Projects-->
     <section>
-      <!--Projects-->
       <div class="container px-4 py-5" id="custom-cards">
         <h2 class="pb-2 border-bottom text-center">Noteable Projects</h2>
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
@@ -123,7 +122,9 @@
               <div
                 class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
               >
-                <h3 class="mb-4 display-6 lh-1 fw-bold">Password Cracker</h3>
+                <h3 class="mb-4 display-6 lh-1 fw-bold projectTitle">
+                  Password Cracker
+                </h3>
                 <p>
                   Built for my capstone project in cybersecurity this Java
                   project features an easy to use GUI where users can input text
@@ -205,10 +206,10 @@
       </div>
     </section>
 
-    <!--Work History-->
+    <!--Work and education History-->
     <section>
       <div class="container">
-        <h2 class="border-bottom text-center">Work History</h2>
+        <h2 class="border-bottom text-center">Work & Education History</h2>
         <div class="row row-cols-1 g-4 py-5">
           <div class="col">
             <div class="accordion">
@@ -288,6 +289,45 @@
                         JavaScript and Python to streamline testing processes,
                         improving efficiency by 15%
                       </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#StudentAccordion"
+                    aria-expanded="false"
+                    aria-controls="StudentAccordion"
+                  >
+                    Student at UWGB<br />
+                    Fall 2019 - Fall 2023
+                  </button>
+                </h2>
+
+                <div
+                  id="StudentAccordion"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <h3>Bachleors in Computer Science</h3>
+                    <h4>
+                      Dual emphasis in Software Engineering and Cybersecurity
+                    </h4>
+                    <p>GPA: 3.83 <br />Magna Cum Laude honors</p>
+                    <h4>Relevant Coursework</h4>
+                    <ul>
+                      <li>Data Structures and Algorithms</li>
+                      <li>Software Engineering</li>
+                      <li>Database Management Systems</li>
+                      <li>Web Development</li>
+                      <li>Network Security</li>
+                      <li>Cryptography</li>
                     </ul>
                   </div>
                 </div>
@@ -375,6 +415,7 @@
             >
           </div>
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3 text-body-secondary">Contact</li>
             <li class="ms-3">
               <a
                 class="text-body-secondary"
@@ -397,6 +438,29 @@
                 <i class="bi bi-github"></i>
               </a>
             </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="mailto: riguygb@gmail.com?subject=Contact from portfolio&body=Ask me anything!"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-envelope-at-fill"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <div
+                type="button"
+                class="text-body-secondary"
+                data-bs-container="body"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="(920) 660-7674"
+              >
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+            </li>
           </ul>
         </footer>
       </div>
@@ -407,5 +471,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js"></script>
   </body>
 </html>
