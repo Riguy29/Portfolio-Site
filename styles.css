@@ -1,26 +1,46 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Jersey+10&family=Metamorphous&display=swap");
 .projectTitle {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-.contact-bubble {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: darkblue;
-  border-radius: 50%;
-  border: grey 2px solid;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 1000;
-  transition: transform 0.3s ease;
+
+#header-name {
+  transition: all 0.3s ease;
+  color: white; /* Fallback for unsupported browsers */
+
+  background: linear-gradient(90deg, white, white, black, white, white);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-flow 4s linear infinite;
+  display: inline-block; /* Ensures background-clip works correctly */
 }
-.contact-bubble:hover {
-  transform: scale(1.1);
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.metamorphous-regular {
+  font-family: "Metamorphous", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
