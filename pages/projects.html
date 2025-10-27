@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riley Arneson's Portfolio</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/project-cards.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <script src="/JSComponents/footer.js" defer></script>
+    <script src="/JSComponents/header.js" defer></script>
+  </head>
+
+  <body class="h-100 text-center text-bg-dark">
+    <header-component
+      active-id="nav-projects"
+      page-title="Projects"
+    ></header-component>
+    <!--Projects-->
+    <section>
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom text-center">Personal Projects</h2>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div
+              class="card card-cover project-card-div h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                id="password-cracker-card-div"
+              >
+                <h3 class="mb-4 display-6 lh-1 fw-bold">Password Cracker</h3>
+                <p>
+                  Built for my capstone project in cybersecurity this Java
+                  project features an easy to use GUI where users can input text
+                  and encrypt it using a variety of hashing algorithms. Then
+                  they can also run a variety of cracking methods such as brute
+                  force, dictionary attacks, and combination attacks to try and
+                  recover the original text.
+                </p>
+                <a
+                  class="text-body-secondary text-decoration-none"
+                  href="https://github.com/Riguy29/PasswordCracker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Password Cracker Repo"
+                >
+                  <i class="bi bi-github me-2"></i>Go to Repo
+                  <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card card-cover project-card-div h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              id="productivity-app-card-div"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="mb-4 display-6 lh-1 fw-bold">Productivity+</h3>
+                <p>
+                  An all in one suite built with Java and Scenebuilder,
+                  Productivity+ features a variety of handy tools to help make
+                  you more productive. Some notable standouts including a notes
+                  widget, music player widget, and an affirmation generator.
+                </p>
+                <a
+                  class="text-body-secondary text-decoration-none"
+                  href="https://github.com/Riguy29/ProductivityPlus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Password Cracker Repo"
+                >
+                  <i class="bi bi-github me-2"></i>Go to Repo
+                  <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card card-cover project-card-div h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              id="library-project-card-div"
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="mb-4 display-6 lh-1 fw-bold">
+                  Library Management System
+                </h3>
+                <p>
+                  A library Management system writen in C++ for my Software
+                  Engineering capstone. Using the CLI, admins can add, edit, and
+                  books, journals, and more. Demonstrated OOP principles such as
+                  inheritance, polymorphism, and encapsulation.
+                </p>
+                <a
+                  class="text-body-secondary text-decoration-none"
+                  href="https://github.com/Riguy29/FinalProject"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Library Management System Repo"
+                >
+                  <i class="bi bi-github me-2"></i>Go to Repo
+                  <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom text-center">Work Projects</h2>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div
+              class="card card-cover project-card-div h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                id="ICEE-slush-rush-card-div"
+              >
+                <h3 class="mb-4 display-6 lh-1 fw-bold">ICEE Slush Rush</h3>
+                <p>
+                  My First big project for Baytek Entertainment, ICEE Slush Rush
+                  is a fast-paced game where players need to fill 50 ICEE cups
+                  before the time expires. The project was written in Unity and
+                  used HID to connect to a custome embedded board that
+                  controlled the lights and inputs.
+                </p>
+                <a
+                  class="text-body-secondary text-decoration-none"
+                  href="https://www.baytekent.com/icee-slush-rush/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to ICEE Slush Rush Project"
+                >
+                  Check it out
+                  <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card card-cover project-card-div h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              id="Prize-Hub-Reloaded-card-div"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="mb-4 display-6 lh-1 fw-bold">Prize Hub Reloaded</h3>
+                <p>
+                  Prize Hub Reloaded is a revamped version of BayTek's Prize Hub
+                  software, designed to enhance user experience and streamline
+                  prize management. This project involved updating the user
+                  interface, improving backend functionality, and integrating
+                  new features to better serve arcade operators and players
+                  alike.
+                </p>
+                <a
+                  class="text-body-secondary text-decoration-none"
+                  href="https://www.baytekent.com/new-prize-hub/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Prize Hub Reloaded Page"
+                >
+                  Check it out
+                  <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col">
+            <div
+              class="card card-cover project-card-div h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="mb-4 display-6 lh-1 fw-bold">
+                  Red Light Green Light
+                </h3>
+                <p></p>
+                <a
+                  class="text-body-secondary text-decoration-none"
+                  href="https://github.com/Riguy29/FinalProject"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Library Management System Repo"
+                >
+                  Check it out
+                  <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <script
+      src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      class="astro-vvvwv3sm"
+    ></script>
+    <footer-component></footer-component>
+  </body>
+</html>
