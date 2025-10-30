@@ -32,7 +32,6 @@
   background-size: cover;
 }
 #library-project-card-div {
-  background-image: url("/assets/pictures/library.jpeg");
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../assets/pictures/library.jpeg");
   background-position: center;
