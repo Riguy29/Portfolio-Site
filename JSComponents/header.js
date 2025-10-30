@@ -21,7 +21,7 @@ class header extends HTMLElement {
           </a>
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a href="cover.html" class="nav-link" aria-current="page" id="nav-home">Home</a>
+              <a href="index.html" class="nav-link" aria-current="page" id="nav-home">Home</a>
             </li>
             <li class="nav-item"><a href="about.html" class="nav-link" id='nav-about' >About</a></li>
             <li class="nav-item"><a href="resume.html" class="nav-link" id="nav-resume" >Resume</a></li>
