@@ -10,15 +10,7 @@ class header extends HTMLElement {
         <header
           class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
         >
-          <a
-            href="/"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          >
-            <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">${pageTitle}</span>
-          </a>
+        <span class="fs-4 d-flex align-items-center mb-3 mb-md-0 me-md-auto">${pageTitle}</span>
           <ul class="nav nav-pills">
             <li class="nav-item">
               <a href="index.html" class="nav-link" aria-current="page" id="nav-home">Home</a>
@@ -36,9 +28,16 @@ class header extends HTMLElement {
       const activeLink = this.querySelector(`#${activeId}`);
       if (activeLink) {
         activeLink.classList.add("active");
+        activeLink.parentNode.classList.add("active-item");
       }
     }
   }
 }
 
 customElements.define("header-component", header);
+
+cssFile = "../styles/header.css";
+link = document.createElement("link");
+link.rel = "stylesheet";
+link.href = cssFile;
+document.head.appendChild(link);
