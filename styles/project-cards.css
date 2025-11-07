@@ -8,6 +8,9 @@
     background-position: 200% center;
   }
 }
+.project-card-div {
+  align-items: center;
+}
 .project-card-div:hover h3 {
   background: linear-gradient(30deg, white, white, black, white, white);
   background-size: 200% auto;
