@@ -27,7 +27,7 @@
     <!--About Me-->
     <section>
       <div class="container">
-        <h2 class="border-bottom text-center">About Me</h2>
+        <!-- <h2 class="border-bottom text-center">About Me</h2> -->
         <div class="row row-cols-1 g-4 py-5">
           <div class="col text-center">
             <h3 class="text-decoration-underline">Background</h3>
@@ -45,14 +45,86 @@
               tech. I currently reside in Green Bay and live with an adorable
               little orange cat, Fae.
             </p>
-            <img
-              src="assets/pictures/about_page/fae-small.jpg"
-              class="img-fluid"
-              id="fae-image"
-              alt="A picture
+            <div
+              id="myCarousel"
+              class="carousel slide carousel-fade mb-6 pointer-event"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-label="Slide 1"
+                  aria-current="true"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                  class=""
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                  class=""
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/pictures/about_page/fae-small.jpg"
+                    class="img-fluid fae-img-carousel-item"
+                    alt="A picture
             of Riley and Fae the cat"
-              loading="lazy"
-            />
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/pictures/about_page/fae-2-small.jpg"
+                    class="img-fluid fae-img-carousel-item"
+                    alt="A picture
+            of Riley and Fae the cat"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/pictures/about_page/fae-3-small.jpg"
+                    class="img-fluid fae-img-carousel-item"
+                    alt="A picture
+            of Riley and Fae the cat"
+                  />
+                </div>
+              </div>
+              <!-- <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button> -->
+              <!-- <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
           </div>
           <div class="col text-center">
             <h3 class="text-decoration-underline">Education</h3>
