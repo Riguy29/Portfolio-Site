@@ -2,3 +2,21 @@
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.education-logo {
+  max-width: 200px;
+  height: auto;
+  margin-top: 15px;
+}
+/* #UWGB-logo {
+  float: inline-start;
+}
+#NWTC-logo {
+  float: inline-end;
+} */
+.education-header {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 50px;
+}
