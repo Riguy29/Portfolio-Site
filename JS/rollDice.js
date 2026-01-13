@@ -9,6 +9,14 @@ d20Dice.addEventListener("click", () => {
   rollDice(document.getElementById("d20-img"), 20);
 });
 
+d20Dice.addEventListener("mouseenter", () => {
+  d20Dice.style.animation = "shake 0.5s linear infinite";
+});
+
+d20Dice.addEventListener("mouseleave", () => {
+  d20Dice.style.animation = "none";
+});
+
 async function rollDice(img, max) {
   isD20Rolling = true;
   const randomRotation = 360 * Math.floor(Math.random() * 4 + 3);
@@ -18,6 +26,7 @@ async function rollDice(img, max) {
 
   img.style.transition = `transform ${animationLength}s ease`;
   img.style.transform = `rotate(${randomRotation}deg)`;
+  d20Dice.style.animation = "none";
   diceRollSound.play();
 
   await waitForDiceRollAnimation(animationLength);
