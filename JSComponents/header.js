@@ -36,7 +36,7 @@ class header extends HTMLElement {
 
 customElements.define("header-component", header);
 
-cssFile = "../styles/header.css";
+cssFile = "./styles/header.css";
 link = document.createElement("link");
 link.rel = "stylesheet";
 link.href = cssFile;
