@@ -8,6 +8,9 @@
     background-position: 200% center;
   }
 }
+.project-card-div {
+  align-items: center;
+}
 .project-card-div:hover h3 {
   background: linear-gradient(30deg, white, white, black, white, white);
   background-size: 200% auto;
@@ -19,21 +22,21 @@
 }
 #password-cracker-card-div {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../assets/pictures/hacker.jpg");
+    url("../assets/pictures/projects_page/hacker.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #productivity-app-card-div {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../assets/pictures/productivity.jpg");
+    url("../assets/pictures/projects_page/productivity.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #library-project-card-div {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../assets/pictures/library.jpeg");
+    url("../assets/pictures/projects_page/library.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,14 +49,14 @@
 }
 #ICEE-slush-rush-card-div {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../assets/pictures/icee-slush-rush.png");
+    url("../assets/pictures/projects_page/icee-slush-rush.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #Prize-Hub-Reloaded-card-div {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../assets/pictures/prize-hub-reloaded.png");
+    url("../assets/pictures/projects_page/prize-hub-reloaded.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

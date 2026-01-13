@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Riley Arneson's Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/about-page.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,6 +16,7 @@
     <!-- Importing JS components-->
     <script src="JSComponents/footer.js" defer></script>
     <script src="JSComponents/header.js" defer></script>
+    <script src="JS/rollDice.js" defer></script>
   </head>
 
   <body data-page="about">
@@ -26,31 +28,177 @@
     <!--About Me-->
     <section>
       <div class="container">
-        <h2 class="border-bottom text-center">About Me</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+        <!-- <h2 class="border-bottom text-center">About Me</h2> -->
+        <div class="row row-cols-1 g-4 py-5">
           <div class="col text-center">
             <h3 class="text-decoration-underline">Background</h3>
             <p>
               I grew up in Green Bay, Wisconsin, in the shadow of Lambeau Field.
-              I have always been a nerd at heart, I first began coding in middle
-              school with scratch, and have been hooked ever since
+              As an only child for the first eight years of my life, I was not
+              thrilled about having to deal with a little sister, but we have
+              only grown closer over the years. In 2016, I was blessed with a
+              half-brother and it has been a wonderful experience to watch him
+              grow up. I have always been a nerd at heart. As a child, you
+              couldn't pull me away from computers and tech. Whether it was
+              disassembling a calculator to get a sneak peek at the circuit
+              board inside or downloading Skyrim's modding tools to investigate
+              how my favorite game worked, I couldn't keep my hands away from
+              tech. I currently reside in Green Bay and live with an adorable
+              little orange cat, Fae.
             </p>
+            <div
+              id="myCarousel"
+              class="carousel slide carousel-fade mb-6 pointer-event"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-label="Slide 1"
+                  aria-current="true"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                  class=""
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                  class=""
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/pictures/about_page/fae-small.jpg"
+                    class="img-fluid fae-img-carousel-item"
+                    alt="A picture
+            of Riley and Fae the cat"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/pictures/about_page/fae-2-small.jpg"
+                    class="img-fluid fae-img-carousel-item"
+                    alt="A picture
+            of Riley and Fae the cat"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/pictures/about_page/fae-3-small.jpg"
+                    class="img-fluid fae-img-carousel-item"
+                    alt="A picture
+            of Riley and Fae the cat"
+                  />
+                </div>
+              </div>
+              <!-- <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button> -->
+              <!-- <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
           </div>
           <div class="col text-center">
-            <h3 class="text-decoration-underline">Education</h3>
+            <div class="education-header">
+              <img
+                src="assets/pictures/about_page/UWGB-Stack-RGB.png"
+                class="education-logo"
+                id="UWGB-logo"
+                alt="A headshot of Riley Arneson"
+              />
+              <h3 class="text-decoration-underline">Education</h3>
+
+              <img
+                src="assets/pictures/about_page/NWTC_logo_vert_COLOR_RGB.png"
+                class="education-logo"
+                id="NWTC-logo"
+                alt="University of Wisconsin Green Bay Logo"
+              />
+            </div>
+
             <p>
-              I graduated from the University of Green Bay with a degree in
-              Computer science, with emphasis in both software engineering and
-              cybersecurity
+              I took my first computer science class, Fundamentals of Computer
+              Science, during my sophmore year at Southwest Highschool. This
+              class introduced me to some of the most basic aspects of software
+              through the use of the block-based learning program Scratch. As
+              part of the class, we also had a module focused on web
+              developments where we used Adobe Dreamweaver to explore basic
+              HTML,CSS, and Javascript. During my final year, I took the newly
+              introduced Computer Science AP course, in which we dove further
+              into the nitty gritty of computers and learned about algorithms,
+              object-oriented programming, and some basic design patterns. After
+              those first few programming classes I was hooked and I knew I
+              wanted to purse computer science further. My first year in college
+              was spent at Northwestern Technical College, which had a direct
+              transfer program with UWGB. I was able to knock out a good portion
+              of my general education requirements and one or two programming
+              classes. I graduated from the University of Green Bay with a
+              degree in Computer science, with emphasis in both software
+              engineering and cybersecurity
             </p>
           </div>
           <div class="col text-center">
             <h3 class="text-decoration-underline">Hobbies</h3>
             <p>
-              When I'm not at working or running errands, I enjoy spending my
-              time working on fun coding side projects or planning my next D&D
-              campaign
+              When I'm not working or running errands, you can usually find me
+              catching up on the latest nerd media, tinkering with new
+              technologies, or prepping for my latest Dungeons and Dragons
+              campaign. I was first exposed to D&D in high school when some
+              other students invited me to join them for a one-shot. Although a
+              little nerve-racking at first, I quickly fell in love with it.
+              After numerous sessions as a player, I wanted to try my hand at
+              being the one who makes it all possible, the DM. I bought the DM's
+              guide and got to work. Using a premade campaign setting, I ran my
+              first session and had even more fun than when I was a player. Ever
+              since, I have been consistently running games for friends,
+              coworkers, and anyone who has an inkling of interest in it. I have
+              also expanded into different TTRPG systems such as Call of Cthulu
+              and the Fantasy Flight Star Wars System. I also enjoy spending an
+              afternoon here and huddling up, playing the latest and greatest
+              AAA game, or exploring a cozy indie game. Video games can be some
+              of the most powerful art made, and it's a shame that some people
+              look down on them. Games like Cyberpunk 2077 and Red Dead
+              Redemption have some of the most impactful stories and have
+              brought actual tears to my eyes.
             </p>
+            <div id="D20-div">
+              <img
+                src="assets/pictures/d20-icon.png"
+                class="img-fluid dnd-img"
+                id="d20-img"
+                alt="A picture of a d20 dice"
+              />
+              <span class="dice-number" id="d20-num">20</span>
+            </div>
           </div>
         </div>
       </div>

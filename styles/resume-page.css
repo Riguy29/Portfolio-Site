@@ -1,0 +1,26 @@
+:root {
+  --max-glow-length: 2rem;
+  --min-glow-length: px;
+}
+
+@keyframes box-shadow-flow-in {
+  100% {
+    box-shadow: 0px 0px var(--max-glow-length) var(--bs-blue);
+  }
+}
+
+@keyframes box-shadow-flow-out {
+  0% {
+    box-shadow: 0px 0px var(--max-glow-length) var(--bs-blue);
+  }
+  100% {
+    box-shadow: 0px 0px 0px var(--bs-blue);
+  }
+}
+
+.work-history-accordion-button:hover {
+  animation: box-shadow-flow-in 0.4s linear forwards;
+}
+.work-history-accordion-button {
+  animation: box-shadow-flow-out 0.4s linear;
+}
